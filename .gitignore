@@ -1,0 +1,26 @@
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Cucumber reports
+cucumber-report/
+
+# Generated reports
+product-report.html
+reports-report.json
+
+# Files excluded from GitHub
+tests/2506077_Information.pdf
+tests/Scripts - Copy.pdf
+features/step-definitions-old
