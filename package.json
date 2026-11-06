@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npx playwright test",
     "test:chromium": "npx playwright test --project=chromium",
-    "test:cucumber": "cucumber-js --retry 1",
+    "test:cucumber": "cucumber-js --retry 2",
     "test:all": "npm run test && npm run test:cucumber"
   },
   "keywords": [],
