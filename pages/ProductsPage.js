@@ -16,6 +16,10 @@ class ProductsPage {
         })
     }
     async verifyProductsCount() {
+        await this.productitems.first().waitFor({
+            state : 'visible',
+            timeout: 15000
+        })
         return await this.productitems.count()
     }
     async getProductPrices() {
