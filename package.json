@@ -7,7 +7,8 @@
     "test": "npx playwright test",
     "test:chromium": "npx playwright test --project=chromium",
     "test:cucumber": "cucumber-js --retry 2",
-    "test:all": "npm run test && npm run test:cucumber"
+    "test:all": "npm run test && npm run test:cucumber",
+    "test:html": "cucumber-js --retry 2 --format html:reports/cucumber-report.html"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,7 @@
   "type": "commonjs",
   "devDependencies": {
     "@cucumber/cucumber": "^13.3.0",
+    "@cucumber/html-formatter": "^24.2.0",
     "@playwright/test": "^1.62.1",
     "@types/node": "^26.2.0"
   }
