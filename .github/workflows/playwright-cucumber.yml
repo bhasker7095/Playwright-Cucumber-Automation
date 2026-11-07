@@ -31,14 +31,13 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
-      - name: Execute Playwright and Cucumber Tests
-        run: |
-          npm run test
-          npm run test:html
-<<<<<<< Updated upstream
+      - name: Execute Playwright Tests
+        run: npm run test
 
-=======
->>>>>>> Stashed changes
+      - name: Execute Cucumber Tests and Generate HTML Report
+        if: always()
+        run: npm run test:html
+
       - name: Upload Playwright Report
         if: always()
         uses: actions/upload-artifact@v4
@@ -46,4 +45,13 @@ jobs:
           name: playwright-html-report
           path: playwright-report/
           retention-days: 30
-          if-no-files-found: ignore
+          if-no-files-found: warn
+
+      - name: Upload Cucumber Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cucumber-html-report
+          path: reports/cucumber-report.html
+          retention-days: 30
+          if-no-files-found: warn
