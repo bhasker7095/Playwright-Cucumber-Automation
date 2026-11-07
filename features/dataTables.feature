@@ -10,3 +10,4 @@ Feature: SauceDemo Data Tables
             | Sauce labs Bike light   |
             | Sauce labs Bolt T-Shirt |
         Then I should see 3 items in the cart
+# interface level changes
