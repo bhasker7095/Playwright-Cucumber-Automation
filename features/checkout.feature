@@ -1,5 +1,5 @@
 Feature: SauceDemo Checkout
-
+  # for CI/CD challenge
     Background:
         Given I am logged in to SauceDemo
         When I add the jacket to the cart
