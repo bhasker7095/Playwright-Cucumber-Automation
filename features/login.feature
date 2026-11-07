@@ -11,3 +11,5 @@ Feature: SauceDemo Login
             | username      | password       | result        |
             | standard_user | secret_sauce   | Products      |
             | standard_user | wrong_password | Error message |
+
+            # update login feature
