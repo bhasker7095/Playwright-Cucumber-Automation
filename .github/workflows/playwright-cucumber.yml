@@ -32,7 +32,9 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Execute Playwright and Cucumber Tests
-        run: npm run test:all
+        run: |
+          npm run test
+          npm run test:html
 
       - name: Upload Playwright Report
         if: always()
