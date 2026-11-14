@@ -4,11 +4,11 @@ Given('I open the SauceDemo login page', async function () {
     await this.loginPage.navigate()
 });
 
-Given('I enter username {string} and password {string}', async function (username, password) {
+When('I enter username {string} and password {string}', async function (username, password) {
    await this.loginPage.enterCredentials(username, password)
 })
 
-Given('I click the login button', async function () {
+When('I click the login button', async function () {
     await this.loginPage.clickLoginButton()
 })
 Then('I should see {string}', async function (result) {

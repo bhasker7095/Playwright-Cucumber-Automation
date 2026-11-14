@@ -6,6 +6,10 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+/tests\parameterization.spec.js/
+/tests\uploadfiles.spec.js/
+/tests\Sauce.spec.js/
+
 
 
 # Environment variables and secrets
